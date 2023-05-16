@@ -1,0 +1,73 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 214
+  Width = 427
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF16
+    Catalog = ''
+    Properties.Strings = (
+      'controls_cp=CP_UTF16')
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = '2110020046'
+    User = 'root'
+    Password = ''
+    Protocol = 'mysql'
+    LibraryLocation = 
+      'D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\libmysql.d' +
+      'll'
+    Left = 160
+    Top = 16
+  end
+  object ZQueryLogin: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from login order by user asc')
+    Params = <>
+    Left = 64
+    Top = 72
+  end
+  object ZQueryKategori: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from kategori order by id_kategori_tempat_lapagan asc')
+    Params = <>
+    Left = 152
+    Top = 72
+    object ZQueryKategoriid_kategori_tempat_lapagan: TIntegerField
+      DisplayLabel = 'ID KATEGORI TEMPAT LAPANGAN'
+      DisplayWidth = 20
+      FieldName = 'id_kategori_tempat_lapagan'
+      Required = True
+    end
+    object ZQueryKategorinama_kategori_lapagan: TWideStringField
+      DisplayLabel = 'NAMA KATEGORI LAPANGAN'
+      DisplayWidth = 25
+      FieldName = 'nama_kategori_lapagan'
+      Required = True
+      Size = 50
+    end
+  end
+  object DSKategori: TDataSource
+    DataSet = ZQueryKategori
+    Left = 152
+    Top = 120
+  end
+  object ZQueryTempatLapangan: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from tempat_lapangan order by id_tempat_lapangan asc')
+    Params = <>
+    Left = 240
+    Top = 80
+  end
+  object DSTempatLapangan: TDataSource
+    DataSet = ZQueryTempatLapangan
+    Left = 256
+    Top = 136
+  end
+end

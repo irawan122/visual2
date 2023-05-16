@@ -1,0 +1,115 @@
+unit Kategori;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Grids, Vcl.DBGrids,
+  Vcl.StdCtrls;
+
+type
+  TForm3 = class(TForm)
+    DBGrid1: TDBGrid;
+    Label1: TLabel;
+    Label2: TLabel;
+    EIdkattptlap: TEdit;
+    ENamakatlap: TEdit;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Label3: TLabel;
+    EFilterData: TEdit;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure EFilterDataChange(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form3: TForm3;
+
+implementation
+
+{$R *.dfm}
+
+uses modul;
+
+procedure TForm3.Button1Click(Sender: TObject);
+begin
+  try
+           with DataModule1 do
+           begin
+           ZQueryKategori.Append;
+           ZQueryKategoriid_kategori_tempat_lapagan.AsString:=EIdkattptlap.Text;
+           ZQueryKategorinama_kategori_lapagan.AsString:=ENamakatlap.Text;
+           ZQueryKategori.Post;
+           end;
+      except
+        on salah:Exception do
+        ShowMessage(salah.Message);
+      end;
+end;
+
+procedure TForm3.Button2Click(Sender: TObject);
+begin
+   try
+           with DataModule1 do
+           begin
+           ZQueryKategori.Edit;
+           ZQueryKategoriid_kategori_tempat_lapagan.AsString:=EIdkattptlap.Text;
+           ZQueryKategorinama_kategori_lapagan.AsString:=ENamakatlap.Text;
+           ZQueryKategori.Post;
+           end;
+      except
+        on salah:Exception do
+        ShowMessage(salah.Message);
+      end;
+end;
+
+procedure TForm3.Button3Click(Sender: TObject);
+begin
+  if(
+  (Trim(EIdkattptlap.Text)='')and
+   (Trim(ENamakatlap.Text)='')
+
+) then
+begin
+   beep;
+   ShowMessage('Silahkan pilih data terlebi dahulu');
+   DBGrid1.SetFocus;
+   Exit;
+end else;
+  DataModule1.ZQueryKategori.Delete
+end;
+
+procedure TForm3.Button4Click(Sender: TObject);
+begin
+  EIdkattptlap.Clear;
+  ENamakatlap.Clear;
+  EIdkattptlap.SetFocus;
+end;
+
+procedure TForm3.EFilterDataChange(Sender: TObject);
+var cari : String;
+begin
+  try
+    cari :=QuotedStr('%'+EFilterData.Text+'%');
+    with DataModule1 do
+    begin
+      ZQueryKategori.SQL.Clear;
+      ZQueryKategori.SQL.Text:='SELECT * FROM kategori WHERE id_kategori_tempat_lapagan LIKE ' + cari + 'or nama_kategori_lapagan LIKE' + cari ;
+      ZQueryKategori.Open;
+    end;
+  except
+    on salah:Exception do
+    ShowMessage(salah.Message);
+  end;
+end;
+
+end.

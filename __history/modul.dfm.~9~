@@ -1,0 +1,164 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 214
+  Width = 627
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF16
+    Catalog = ''
+    Properties.Strings = (
+      'controls_cp=CP_UTF16')
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = '2110020046'
+    User = 'root'
+    Password = ''
+    Protocol = 'mysql'
+    LibraryLocation = 
+      'D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\libmysql.d' +
+      'll'
+    Left = 160
+    Top = 16
+  end
+  object ZQueryLogin: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from login order by user asc')
+    Params = <>
+    Left = 64
+    Top = 72
+  end
+  object ZQueryKategori: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from kategori order by id_kategori_tempat_lapagan asc')
+    Params = <>
+    Left = 152
+    Top = 72
+    object ZQueryKategoriid_kategori_tempat_lapagan: TIntegerField
+      DisplayLabel = 'ID KATEGORI TEMPAT LAPANGAN'
+      DisplayWidth = 20
+      FieldName = 'id_kategori_tempat_lapagan'
+      Required = True
+    end
+    object ZQueryKategorinama_kategori_lapagan: TWideStringField
+      DisplayLabel = 'NAMA KATEGORI LAPANGAN'
+      DisplayWidth = 25
+      FieldName = 'nama_kategori_lapagan'
+      Required = True
+      Size = 50
+    end
+  end
+  object DSKategori: TDataSource
+    DataSet = ZQueryKategori
+    Left = 152
+    Top = 120
+  end
+  object ZQueryTempatLapangan: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from tempat_lapangan order by id_tempat_lapangan asc')
+    Params = <>
+    Left = 224
+    Top = 72
+    object ZQueryTempatLapanganid_tempat_lapangan: TIntegerField
+      DisplayLabel = 'ID TPT LAP'
+      DisplayWidth = 8
+      FieldName = 'id_tempat_lapangan'
+      Required = True
+    end
+    object ZQueryTempatLapanganid_kategori_tempat_lapangan: TIntegerField
+      DisplayLabel = 'ID KAT TPT LAP'
+      DisplayWidth = 10
+      FieldName = 'id_kategori_tempat_lapangan'
+      Required = True
+    end
+    object ZQueryTempatLapangannama_tempat_lapangan: TWideStringField
+      DisplayLabel = 'NAMA TPT LAP'
+      DisplayWidth = 20
+      FieldName = 'nama_tempat_lapangan'
+      Required = True
+      Size = 50
+    end
+    object ZQueryTempatLapangantelp: TWideStringField
+      DisplayLabel = 'TELP'
+      FieldName = 'telp'
+      Required = True
+      Size = 13
+    end
+    object ZQueryTempatLapanganemail: TWideStringField
+      DisplayLabel = 'EMAIL'
+      DisplayWidth = 15
+      FieldName = 'email'
+      Required = True
+      Size = 30
+    end
+    object ZQueryTempatLapangandeskripsi_tempat_lap: TWideStringField
+      DisplayLabel = 'DESK TPT LAP'
+      DisplayWidth = 20
+      FieldName = 'deskripsi_tempat_lap'
+      Required = True
+      Size = 50
+    end
+    object ZQueryTempatLapanganjambuka: TWideStringField
+      DisplayLabel = 'JAM BUKA'
+      DisplayWidth = 8
+      FieldName = 'jambuka'
+      Required = True
+    end
+    object ZQueryTempatLapanganjamtutup: TWideStringField
+      DisplayLabel = 'JAM TUTUP'
+      DisplayWidth = 9
+      FieldName = 'jamtutup'
+      Required = True
+    end
+    object ZQueryTempatLapanganharga_persewa: TWideStringField
+      DisplayLabel = 'HARGA SEWA'
+      DisplayWidth = 10
+      FieldName = 'harga_persewa'
+      Required = True
+    end
+    object ZQueryTempatLapangandurasi_sewa: TWideStringField
+      DisplayLabel = 'DURASI SEWA'
+      DisplayWidth = 10
+      FieldName = 'durasi_sewa'
+      Required = True
+    end
+  end
+  object DSTempatLapangan: TDataSource
+    DataSet = ZQueryTempatLapangan
+    Left = 232
+    Top = 120
+  end
+  object ZQueryLapangan: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from lapangan order by id_lapangan asc')
+    Params = <>
+    Left = 328
+    Top = 64
+  end
+  object DSLapangan: TDataSource
+    DataSet = ZQueryLapangan
+    Left = 336
+    Top = 120
+  end
+  object ZQueryGaleri: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from galeri order by galeri_lapangan asc')
+    Params = <>
+    Left = 408
+    Top = 48
+  end
+  object DSGaleri: TDataSource
+    DataSet = ZQueryGaleri
+    Left = 416
+    Top = 128
+  end
+end

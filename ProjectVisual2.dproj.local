@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/05/14 13:53:12.000.471,=C:\Users\Sulaiman\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/14 13:54:37.000.861,C:\Users\Sulaiman\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Masuk.dfm</Transaction>
+    <Transaction>2023/05/14 13:54:37.000.861,C:\Users\Sulaiman\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Masuk.pas</Transaction>
+    <Transaction>2023/05/14 13:54:49.000.530,C:\Users\Sulaiman\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\ProjectVisual2.dproj</Transaction>
+    <Transaction>2023/05/14 13:54:58.000.464,=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Unit1.pas</Transaction>
+    <Transaction>2023/05/14 13:56:54.000.905,D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Unit1.dfm=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\modul.dfm</Transaction>
+    <Transaction>2023/05/14 13:56:54.000.905,D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Unit1.pas=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\modul.pas</Transaction>
+    <Transaction>2023/05/14 14:54:42.000.068,=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Unit2.pas</Transaction>
+    <Transaction>2023/05/14 14:55:36.000.677,D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Unit2.dfm=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Utama.dfm</Transaction>
+    <Transaction>2023/05/14 14:55:36.000.677,D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Unit2.pas=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Utama.pas</Transaction>
+    <Transaction>2023/05/14 15:18:56.000.763,=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Unit3.pas</Transaction>
+    <Transaction>2023/05/14 15:19:16.000.817,D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Kategori.pas=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Unit3.pas</Transaction>
+    <Transaction>2023/05/14 15:19:16.000.817,D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Kategori.dfm=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Unit3.dfm</Transaction>
+    <Transaction>2023/05/14 15:30:39.000.888,=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Unit4.pas</Transaction>
+    <Transaction>2023/05/14 15:30:53.000.411,D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\TempatLapangan.pas=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Unit4.pas</Transaction>
+    <Transaction>2023/05/14 15:30:53.000.411,D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\TempatLapangan.dfm=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Unit4.dfm</Transaction>
+    <Transaction>2023/05/14 16:02:19.000.352,=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Unit5.pas</Transaction>
+    <Transaction>2023/05/14 16:02:31.000.484,D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Unit5.pas=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Lapangan.pas</Transaction>
+    <Transaction>2023/05/14 16:02:31.000.484,D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Unit5.dfm=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Lapangan.dfm</Transaction>
+    <Transaction>2023/05/14 16:07:48.000.886,=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Unit6.pas</Transaction>
+    <Transaction>2023/05/14 16:07:59.000.915,D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Unit6.dfm=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Galeri.dfm</Transaction>
+    <Transaction>2023/05/14 16:07:59.000.915,D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Unit6.pas=D:\kuliah\SEMESTAR 4\Visual 2\tugas\Irawan_2110020046\Galeri.pas</Transaction>
+  </Transactions>
+</BorlandProject>
